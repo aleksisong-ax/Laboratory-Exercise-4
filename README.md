@@ -62,3 +62,5 @@ The GitHub Actions workflow builds this app with the correct repository path and
 The store header uses the provided CvSU emblem, with a green-and-gold visual palette.
 
 The hero section also features the supplied CvSU “Truth, Excellence, Service” banner.
+
+Product image sources, creators, and licenses are listed in `src/assets/products/IMAGE-CREDITS.md`. The catalog retains the lab sample prices and formats them in Philippine pesos.
