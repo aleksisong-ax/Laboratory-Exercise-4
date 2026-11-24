@@ -6,6 +6,7 @@ import products from './data/products.js';
 import './App.css';
 
 function App() {
+  // Keep cart and filter values in the parent so child controls stay reusable.
   const [cartCount, setCartCount] = useState(0);
   const [lastAdded, setLastAdded] = useState('');
   const [searchText, setSearchText] = useState('');
@@ -13,12 +14,13 @@ function App() {
   const [category, setCategory] = useState('All');
   const [sortOrder, setSortOrder] = useState('default');
 
-  // Delay filtering until typing pauses; cleanup cancels the previous pending update.
+  // Wait for typing to pause, and cancel the old timer whenever the text changes.
   useEffect(() => {
     const timer = window.setTimeout(() => setDebouncedSearch(searchText), 300);
     return () => window.clearTimeout(timer);
   }, [searchText]);
 
+  // Filter a copy so sorting never changes the original product data.
   const normalizedSearch = debouncedSearch.trim().toLowerCase();
   let filteredProducts = [...products].filter((product) => {
     const matchesTitle = product.title.toLowerCase().includes(normalizedSearch);
@@ -28,6 +30,7 @@ function App() {
   if (sortOrder === 'low-high') filteredProducts.sort((a, b) => a.price - b.price);
   if (sortOrder === 'high-low') filteredProducts.sort((a, b) => b.price - a.price);
 
+  // Keep the browser tab title in sync with the number of matching products.
   useEffect(() => {
     document.title = `CvSU Mini Store (${filteredProducts.length} results)`;
   }, [filteredProducts.length]);
@@ -98,6 +101,7 @@ function App() {
 
         {filteredProducts.length > 0 ? (
           <div className="product-grid">
+            {/* Render each result with a stable key and optional badge content. */}
             {filteredProducts.map((product) => (
               <ProductCard key={product.id} {...product} onAddToCart={handleAddToCart}>
                 {product.id === 1 && <span className="badge badge--new">New</span>}

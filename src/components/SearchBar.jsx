@@ -1,6 +1,7 @@
 import { Search, X } from 'lucide-react';
 import './SearchBar.css';
 
+// These controlled inputs display and update values owned by the parent.
 function SearchBar({ searchText, onSearchChange, category, onCategoryChange, sortOrder, onSortChange, onClear }) {
   return (
     <section className="search-panel" aria-label="Search and filter products">

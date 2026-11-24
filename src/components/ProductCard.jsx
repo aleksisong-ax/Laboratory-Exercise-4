@@ -1,5 +1,6 @@
 import './ProductCard.css';
 
+// This reusable card shows product details, availability, and an optional badge.
 function ProductCard({
   title,
   price,

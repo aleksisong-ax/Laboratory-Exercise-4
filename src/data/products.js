@@ -1,3 +1,4 @@
+// Each product provides the fields used by the reusable catalog cards.
 const products = [
   { id: 1, title: 'Wireless Mouse', price: 599, category: 'Electronics', inStock: true },
   { id: 2, title: 'Mechanical Keyboard', price: 2499, category: 'Electronics', inStock: true },
