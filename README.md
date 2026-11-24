@@ -1,6 +1,6 @@
 # CvSU Mini Store — Laboratory Exercises 3 & 4
 
-A complete Vite + React implementation of the two attached labs. The current branch, `lab4-live`, contains the Exercise 3 product catalog plus Exercise 4 live search, category filtering, price sorting, debouncing, result count, and document-title effect.
+This is the Laboratory Exercise 4 submission. It extends the Lab 3 product catalog with live search, category filtering, price sorting, debouncing, result count, and a document-title effect.
 
 ## Run locally
 
@@ -16,7 +16,7 @@ Open the local URL printed by Vite. To make a production build, run `npm run bui
 - `main` — completed Laboratory Exercise 3 (product cards, props, callback/cart, responsive styling).
 - `lab4-live` — Laboratory Exercise 4 extension (controlled SearchBar, combined filters, sorting, debounce, title update, empty state).
 
-In the separate submission repositories, the Lab 3 repository's `main` contains Exercise 3, while both `main` and `lab4-live` in the Lab 4 repository should contain the Exercise 4 version. Switch versions in this combined working repository with `git switch main` or `git switch lab4-live`.
+This combined working repository keeps Lab 3 on its local `main` branch and Lab 4 on `lab4-live`. In the separate Laboratory-Exercise-4 GitHub repository, both remote `main` and `lab4-live` contain this Lab 4 version; Lab 3 remains in its separate repository.
 
 ## Implementation notes
 
@@ -57,4 +57,6 @@ Replace the example URL with your actual repository URL before submitting. No Gi
 
 ## GitHub Pages hosting
 
-The `lab4-live` branch includes a GitHub Actions workflow that builds this app with the correct repository path and deploys it to Pages. In the repository settings, set **Settings → Pages → Build and deployment → Source** to **GitHub Actions**. The site URL will be `https://aleksisong-ax.github.io/Laboratory-Exercise-4/` after the first successful workflow run.
+The GitHub Actions workflow builds this app with the correct repository path and deploys the Lab 4 version from the `main` branch to Pages. In the repository settings, set **Settings → Pages → Build and deployment → Source** to **GitHub Actions**. The site URL will be `https://aleksisong-ax.github.io/Laboratory-Exercise-4/` after the first successful workflow run.
+
+The store header uses the provided CvSU emblem, with a green-and-gold visual palette.

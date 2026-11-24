@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { ArrowDownRight, ShoppingBag, Sparkles } from 'lucide-react';
+import cvsuLogo from './assets/cvsu-logo.png';
 import ProductCard from './components/ProductCard.jsx';
 import SearchBar from './components/SearchBar.jsx';
 import products from './data/products.js';
@@ -51,7 +52,7 @@ function App() {
     <main className="page-shell">
       <header className="site-header">
         <a className="brand" href="#top" aria-label="CvSU Mini Store home">
-          <span className="brand__mark"><ShoppingBag size={20} strokeWidth={2.2} /></span>
+          <img className="brand__logo" src={cvsuLogo} alt="Cavite State University emblem" />
           <span>CvSU <b>MINI STORE</b></span>
         </a>
         <a className="header-link" href="#catalog">Explore the catalog <ArrowDownRight size={16} /></a>
