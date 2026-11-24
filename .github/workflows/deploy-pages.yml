@@ -2,7 +2,7 @@ name: Deploy Lab 4 to GitHub Pages
 
 on:
   push:
-    branches: [lab4-live]
+    branches: [main, lab4-live]
   workflow_dispatch:
 
 permissions:

@@ -16,7 +16,7 @@ Open the local URL printed by Vite. To make a production build, run `npm run bui
 - `main` — completed Laboratory Exercise 3 (product cards, props, callback/cart, responsive styling).
 - `lab4-live` — Laboratory Exercise 4 extension (controlled SearchBar, combined filters, sorting, debounce, title update, empty state).
 
-Switch versions with `git switch main` or `git switch lab4-live`.
+In the separate submission repositories, the Lab 3 repository's `main` contains Exercise 3, while both `main` and `lab4-live` in the Lab 4 repository should contain the Exercise 4 version. Switch versions in this combined working repository with `git switch main` or `git switch lab4-live`.
 
 ## Implementation notes
 
