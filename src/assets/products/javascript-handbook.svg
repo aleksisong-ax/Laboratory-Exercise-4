@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" role="img" aria-label="JavaScript Handbook book cover">
+<rect width="640" height="440" fill="#edf6eb"/><rect x="48" y="24" width="544" height="392" rx="18" fill="#fbf7d9"/><rect x="48" y="24" width="34" height="392" rx="17" fill="#0a6634"/><path d="M82 42h470v356H82z" fill="#f4d548"/>
+<text x="122" y="91" fill="#0a6634" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="4">CAMPUS TECH SERIES</text>
+<rect x="122" y="127" width="112" height="110" rx="8" fill="#0a6634"/><text x="140" y="211" fill="#f7e679" font-family="monospace" font-size="66" font-weight="700">JS</text>
+<text x="122" y="297" fill="#123b22" font-family="Arial,sans-serif" font-size="36" font-weight="800" letter-spacing="1">JAVASCRIPT</text>
+<text x="122" y="346" fill="#123b22" font-family="Arial,sans-serif" font-size="39" font-weight="700" letter-spacing="1">HANDBOOK</text>
+<path d="M122 371h330" stroke="#0a6634" stroke-width="4"/><text x="122" y="397" fill="#245739" font-family="Arial,sans-serif" font-size="14" letter-spacing="3">A PRACTICAL STUDY GUIDE</text>
+</svg>

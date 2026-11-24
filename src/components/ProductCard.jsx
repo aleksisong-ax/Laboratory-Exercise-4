@@ -8,6 +8,9 @@ function ProductCard({
   inStock,
   onAddToCart,
   children,
+  image,
+  imageAlt,
+  imageFit = 'cover',
 }) {
   return (
     <article className={`product-card${inStock ? '' : ' product-card--out'}`}>
@@ -15,8 +18,13 @@ function ProductCard({
         <span className="product-card__category">{category}</span>
         {children && <div className="product-card__badges">{children}</div>}
       </div>
-      <div className="product-card__art" aria-hidden="true">
-        <span>{category === 'Books' ? '▤' : category === 'School Supplies' ? '✎' : category === 'Accessories' ? '◉' : '⌁'}</span>
+      <div className="product-card__art">
+        <img
+          className={`product-card__image${imageFit === 'contain' ? ' product-card__image--contain' : ''}`}
+          src={image}
+          alt={imageAlt || title}
+          loading="lazy"
+        />
       </div>
       <div className="product-card__content">
         <h2>{title}</h2>
