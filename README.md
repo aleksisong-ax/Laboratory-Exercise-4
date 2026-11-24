@@ -54,3 +54,7 @@ git push -u origin lab4-live
 ```
 
 Replace the example URL with your actual repository URL before submitting. No GitHub account or remote was connected here, so the repository has been prepared locally but not published.
+
+## GitHub Pages hosting
+
+The `lab4-live` branch includes a GitHub Actions workflow that builds this app with the correct repository path and deploys it to Pages. In the repository settings, set **Settings → Pages → Build and deployment → Source** to **GitHub Actions**. The site URL will be `https://aleksisong-ax.github.io/Laboratory-Exercise-4/` after the first successful workflow run.
