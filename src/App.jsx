@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { ArrowDownRight, ShoppingBag, Sparkles } from 'lucide-react';
 import cvsuLogo from './assets/cvsu-logo.png';
+import cvsuBanner from './assets/cvsu-values-banner.png';
 import ProductCard from './components/ProductCard.jsx';
 import SearchBar from './components/SearchBar.jsx';
 import products from './data/products.js';
@@ -65,14 +66,8 @@ function App() {
           <p>Thoughtful little essentials for studying, making, and everything in between.</p>
           <a className="hero__cta" href="#catalog">Shop the collection <span>↓</span></a>
         </div>
-        <div className="hero__art" aria-label="Illustration of a curated assortment of school and desk essentials" role="img">
-          <div className="sun-orb" />
-          <div className="hero-sticker">MADE FOR<br />YOUR NEXT<br /><strong>BIG IDEA</strong></div>
-          <div className="hero-product hero-product--book"><span>IDEAS<br />IN<br />MOTION</span></div>
-          <div className="hero-product hero-product--bottle"><i /></div>
-          <div className="hero-product hero-product--headphones"><i /></div>
-          <div className="hero-product hero-product--pencil"><i /></div>
-          <div className="hero-spark hero-spark--one">✳</div><div className="hero-spark hero-spark--two">✦</div>
+        <div className="hero__art">
+          <img className="hero__banner" src={cvsuBanner} alt="CvSU values: Truth, Excellence, Service" />
         </div>
       </section>
 

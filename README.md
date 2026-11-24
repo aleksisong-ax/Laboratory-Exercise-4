@@ -60,3 +60,5 @@ Replace the example URL with your actual repository URL before submitting. No Gi
 The GitHub Actions workflow builds this app with the correct repository path and deploys the Lab 4 version from the `main` branch to Pages. In the repository settings, set **Settings → Pages → Build and deployment → Source** to **GitHub Actions**. The site URL will be `https://aleksisong-ax.github.io/Laboratory-Exercise-4/` after the first successful workflow run.
 
 The store header uses the provided CvSU emblem, with a green-and-gold visual palette.
+
+The hero section also features the supplied CvSU “Truth, Excellence, Service” banner.
